@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books | M&Ðᔕtore</title>
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo">M&Ð</div>
+            <div class="site-title">
+                <h1>M&Ðᔕtore</h1>
+                <p>Your Favorite Online Store</p>
+            </div>
+        </div>
+        <div class="header-right">
+           
+            <a href="logout.php" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="books.html" class="active">Books</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <h2>Books</h2>
+            <p>Discover your next great read</p>
+        </section>
+        
+        <section class="products-grid">
+            <!-- Product 7: Fantasy Book -->
+            <article class="product-card">
+                <img src="images/fantasy_book.jpg" alt="The Dragon Chronicles">
+                <div class="product-body">
+                    <h3>The Dragon Chronicles</h3>
+                    <p class="product-price">4800DA</p>
+                    <p class="product-desc">Epic fantasy novel following the journey of a young hero in a world of magic, dragons, and ancient prophecies. 512 pages.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="7" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="7" 
+                                data-product-name="The Dragon Chronicles" 
+                                data-product-price="4800">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Product 8: Programming Book -->
+            <article class="product-card">
+                <img src="images/programming_book.jpg" alt="Algorithms & Data Structures">
+                <div class="product-body">
+                    <h3>Algorithms & Data Structures</h3>
+                    <p class="product-price">7200DA</p>
+                    <p class="product-desc">Comprehensive computer science textbook covering fundamental algorithms, data structures, and computational complexity theory.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="8" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="8" 
+                                data-product-name="Algorithms & Data Structures" 
+                                data-product-price="7200">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Product 9: Thriller Book -->
+            <article class="product-card">
+                <img src="images/thriller_book.jpg" alt="The Silent Depths">
+                <div class="product-body">
+                    <h3>The Silent Depths</h3>
+                    <p class="product-price">1900DA</p>
+                    <p class="product-desc">Bestselling psychological thriller about secrets, deception, and a mystery that unfolds in a small coastal town. Gripping page-turner.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="9" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="9" 
+                                data-product-name="The Silent Depths" 
+                                data-product-price="1900">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Fixed Asides -->
+    <aside class="aside-container">
+        <!-- Shopping Policy -->
+        <div class="aside-panel">
+            <h4>Shopping Policy</h4>
+            <div class="panel-body">
+                <div class="policy-scroll">
+                    <p>Free shipping on orders over 10000DA! Easy 30-day returns. Secure payment processing. Customer support available 24/7. All products come with manufacturer warranty.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cart Summary -->
+        <div class="aside-panel cart-summary-panel">
+            <h4>Cart Summary (<span id="cart-count">0</span>)</h4>
+            <div class="panel-body">
+                <div id="cart-list">
+                    <p class="cart-empty">Your cart is empty</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="student-info">
+                <p><strong>👤Student Name:</strong> MOHAMED</p>
+                <p><strong>📧Email:</strong> MOH.Ham@gmail.com</p>
+                <p><strong>🆔Group:</strong> 8 section1</p>
+            </div>
+            <div class="checkout-section">
+                <p class="footer-total">Total: <span id="footer-total">0.00DA</span></p>
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

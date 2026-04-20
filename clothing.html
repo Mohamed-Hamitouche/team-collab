@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing | M&Ðᔕtore</title>
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo">M&Ð</div>
+            <div class="site-title">
+                <h1>M&Ðᔕtore</h1>
+                <b>Your Favorite Online Store</b>
+            </div>
+        </div>
+        <div class="header-right">
+            
+            <a href="logout.php" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="clothing.html" class="active">Clothing</a></li>
+            <li><a href="books.html">Books</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <h2>Clothing</h2>
+            <p>Stylish apparel for every occasion</p>
+        </section>
+        
+        <section class="products-grid">
+            <!-- Product 4: Jeans -->
+            <article class="product-card">
+                <img src="images/rjean.jpg"Regular Jeans">
+                <div class="product-body">
+                    <h3>Regular Jeans</h3>
+                    <p class="product-price">6800DA</p>
+                    <p class="product-desc">Premium quality blue denim jeans with comfortable stretch fit. Classic five-pocket styling and durable construction.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="4" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="4" 
+                                data-product-name="Regular Jeans" 
+                                data-product-price="6800">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Product 5: T-Shirt -->
+            <article class="product-card">
+                <img src="images/tshirt.jpg" alt="Graphic Print T-Shirt">
+                <div class="product-body">
+                    <h3>Graphic Print T-Shirt</h3>
+                    <p class="product-price">4500DA</p>
+                    <p class="product-desc">Soft cotton heather gray t-shirt with minimalist geometric design. Machine washable and pre-shrunk for lasting fit.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="5" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="5" 
+                                data-product-name="Graphic Print T-Shirt" 
+                                data-product-price="4500">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Product 6: Sneakers -->
+            <article class="product-card">
+                <img src="images/Travis-Scott.webp" alt="Urban Running Sneakers">
+                <div class="product-body">
+                    <h3>TravisSCOTT Sneakers</h3>
+                    <p class="product-price">12000DA</p>
+                    <p class="product-desc">Trendy streetwear sneakers with a unique design, lightweight feel, and cushioned comfort for daily use.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="6" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="6" 
+                                data-product-name="Urban Running Sneakers" 
+                                data-product-price="12000">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Fixed Asides -->
+    <aside class="aside-container">
+        <!-- Shopping Policy -->
+        <div class="aside-panel">
+            <h4>Shopping Policy</h4>
+            <div class="panel-body">
+                <div class="policy-scroll">
+                    <p>Free shipping on orders over 10000DA! Easy 30-day returns. Secure payment processing. Customer support available 24/7. All products come with manufacturer warranty.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cart Summary -->
+        <div class="aside-panel cart-summary-panel">
+            <h4>Cart Summary (<span id="cart-count">0</span>)</h4>
+            <div class="panel-body">
+                <div id="cart-list">
+                    <p class="cart-empty">Your cart is empty</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="student-info">
+                <p><strong>👤Student Name:</strong> MOHAMED</p>
+                <p><strong>📧Email:</strong> MOH.Ham@gmail.com</p>
+                <p><strong>🆔Group:</strong> 8 section1</p>
+            </div>
+            <div class="checkout-section">
+                <p class="footer-total">Total: <span id="footer-total">0.00DA</span></p>
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

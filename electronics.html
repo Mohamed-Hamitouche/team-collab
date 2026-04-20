@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics | M&Ðᔕtore</title>
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo">M&Ð</div>
+            <div class="site-title">
+                <h1>M&Ðᔕtore</h1>
+                <p>Your Favorite Online Store</p>
+            </div>
+        </div>
+        <div class="header-right">
+           
+            <a href="logout.php" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="electronics.html" class="active">Electronics</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="books.html">Books</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <h2>Electronics</h2>
+            <p>Cutting-edge technology and gadgets for every need</p>
+        </section>
+        
+        <section class="products-grid">
+            <!-- Product 1: Smartphone -->
+            <article class="product-card">
+                <img src="images/iphone.webp" alt="Iphone 15Pro Max">
+                <div class="product-body">
+                    <h3>Iphone 15Pro Max</h3>
+                    <p class="product-price">179000DA</p>
+                    <p class="product-desc">iPhone 15 Pro Max 256GB, 6.7” OLED display, A17 Pro chip, 48MP camera with 5x zoom, 8GB RAM, titanium design, long battery life, and USB-C fast charging.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="1" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="1" 
+                                data-product-name="Pro Smartphone X1" 
+                                data-product-price="179000">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Product 2: Headphones -->
+            <article class="product-card">
+                <img src="images/headphones.jpg" alt="Wireless Headphones">
+                <div class="product-body">
+                    <h3>Wireless Headphones</h3>
+                    <p class="product-price">22000DA</p>
+                    <p class="product-desc">Experience premium sound and comfort with Apple’s AirPods Max,Active Noise Cancellation, and a sleek aluminum design. Enjoy immersive sound, all-day comfort, and seamless connection with your Apple devices.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="2" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="2" 
+                                data-product-name="Wireless Headphones Pro" 
+                                data-product-price="22000">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Product 3: Smartwatch -->
+            <article class="product-card">
+                <img src="images/applewatch.jpg" alt="Apple Smartwatch">
+                <div class="product-body">
+                    <h3>Apple Watch</h3>
+                    <p class="product-price">39000DA</p>
+                    <p class="product-desc">Stay connected, active, and healthy with the Apple Watch. Designed with advanced fitness tracking, heart rate monitoring, and smart notifications, it helps you manage your day while keeping your wellness goals on track—all from your wrist.</p>
+                    <div class="product-controls">
+                        <input type="number" data-product-id="3" value="1" min="1" max="10">
+                        <button class="add-to-cart-btn" 
+                                data-product-id="3" 
+                                data-product-name="Fitness Smartwatch" 
+                                data-product-price="39000">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Fixed Asides -->
+    <aside class="aside-container">
+        <!-- Shopping Policy -->
+        <div class="aside-panel">
+            <h4>Shopping Policy</h4>
+            <div class="panel-body">
+                <div class="policy-scroll">
+                    <p>Free shipping on orders over 10000DA! Easy 30-day returns. Secure payment processing. Customer support available 24/7. All products come with manufacturer warranty.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cart Summary -->
+        <div class="aside-panel cart-summary-panel">
+            <h4>Cart Summary (<span id="cart-count">0</span>)</h4>
+            <div class="panel-body">
+                <div id="cart-list">
+                    <p class="cart-empty">Your cart is empty</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="student-info">
+                <p><strong>👤Student Name:</strong> MOHAMED</p>
+                <p><strong>📧Email:</strong> MOH.Ham@gmail.com</p>
+                <p><strong>🆔Group:</strong> 8 section1</p>
+            </div>
+            <div class="checkout-section">
+                <p class="footer-total">Total: <span id="footer-total">0.00DA</span></p>
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
